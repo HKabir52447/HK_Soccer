@@ -180,6 +180,17 @@ width: 75%;
 }
 
 /* media query */
+@media only screen and (max-width:1024px) and (min-width:992.5px){
+    .players{
+        margin-left: -240px;
+    }
+    .player{
+        width: 315px;
+    }
+    .player img {
+        width: 285px;
+    }
+}
 @media only screen and (max-width:992px){
     .banner{
         flex-direction: column;
@@ -195,6 +206,14 @@ width: 75%;
         width: 325px;
     }
 }
+@media only screen and (max-width:767.5px){
+    .player img {
+        width: 250px;
+    }
+    .player {
+        width: 290px;
+    }
+}
 @media only screen and (max-width:576px){
     .banner_img img{
         width: 335px;
@@ -205,5 +224,24 @@ width: 75%;
     .players {
         margin-left: 0px;
         grid-template-columns: 1fr;
+    }
+    .player{
+        width: 330px;
+        margin-left: -25px;
+    }
+    .player img{
+        width: 300px;
+    }
+    .awards_title {
+        font-size: 2em;
+    }
+    .sponsors h1 {
+        font-size: 2em;
+    }
+    .football img{
+        width: 300px;
+    }
+    .sponsors_list {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
