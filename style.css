@@ -92,8 +92,12 @@ header{
 }
 /* awards style */
 .awards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reawards{
     width: 75%;
-    margin: 50px auto;
 }
 .awards_title{
     padding: 30px;
@@ -172,4 +176,34 @@ width: 75%;
 }
 .sponsor img{
     width: 140px;
+    cursor: pointer;
+}
+
+/* media query */
+@media only screen and (max-width:992px){
+    .banner{
+        flex-direction: column;
+    }
+    .players {
+        margin-left: -150px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player {
+        width: 360px;
+    }
+    .player img {
+        width: 325px;
+    }
+}
+@media only screen and (max-width:576px){
+    .banner_img img{
+        width: 335px;
+    }
+    .banner_text h1 {
+        font-size: 2em;
+    }
+    .players {
+        margin-left: 0px;
+        grid-template-columns: 1fr;
+    }
 }
