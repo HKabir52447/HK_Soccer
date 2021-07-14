@@ -1,0 +1,175 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common css */
+button{
+    padding: 9px 20px;
+    background: transparent;
+    border: 1px solid #E02C6D;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.39);
+    overflow: hidden;
+}
+button:hover{
+    background: #E02C6D;
+}
+button:hover .fa-arrow-right{
+    transform: translateX(5px);
+}
+.fa-arrow-right{
+    transform: translateX(38px);
+    transition: 0.3s linear;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* header style */
+header{
+    background: #2D25A0;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+.banner_text h1{
+    color: #fff;
+    font-size: 3em;
+    padding: 20px 0;
+}
+.banner_text i{
+   margin-left: 8px;
+}
+.banner_img{
+    transition: 0.6s linear; 
+}
+.banner_img img{
+    width: 555px;  
+}
+.banner_img:hover{
+    transform: translate(20px, 10px);
+}
+/* top players style */
+.top_players{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.players{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.player{
+    width: 330px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.507);
+    overflow: hidden;
+}
+.player img{
+    width: 300px;
+    transition: .5s linear;
+}
+.player:hover img{
+    transform: scale(1.2, 1.2);
+}
+.player .thumbnail, .player_details {
+    padding: 15px;
+}
+.player_details p{
+    margin: 10px 0;
+}
+/* awards style */
+.awards{
+    width: 75%;
+    margin: 50px auto;
+}
+.awards_title{
+    padding: 30px;
+    font-size: 2.5em;
+}
+.award_list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.award{
+    text-align: center;
+    padding: 30px 0;
+}
+.award_details h4{
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.award .thumbnail img{
+    transition: 0.3s linear;
+}
+.award:hover img{
+    transform: translateY(-20px);
+}
+.award:hover .award_details h4{
+    color: #0984e3;
+}
+
+/* footer style */
+footer{
+    margin: 50px 0;
+}
+.football{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.football img{
+    width: 480px;
+}
+.social_icons i{
+    padding: 10px;
+    background: #aaaaac71;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #E02C6D;
+    transition: 0.2s linear;
+}
+.social_icons i:hover{
+    background-color: #E02C6D;
+    color: #fff;
+    transform: translateY(-5px);
+}
+/* sponsors style */
+.our_sponsors{
+    display: flex;
+    justify-content: center;
+}
+.sponsors{
+width: 75%;
+}
+.sponsors h1{
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+.sponsors_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.sponsor{
+    max-width: 150px ;
+}
+.sponsor img{
+    width: 140px;
+}
